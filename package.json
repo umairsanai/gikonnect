@@ -1,0 +1,45 @@
+{
+  "name": "gikonnect-backend",
+  "version": "1.0.0",
+  "description": "Backend API for GIKonnect",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "MODE=dev npx tsx watch server.ts",
+    "start": "MODE=dev node dist/server.js",
+    "prod": "MODE=prod node dist/server.js"
+  },
+  "author": "Umair Anwar",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "email-validator": "^2.0.4",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.2",
+    "helmet": "^8.1.0",
+    "hpp-clean": "^1.0.4",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "node-mailjet": "^6.0.11",
+    "pg": "^8.20.0",
+    "pg-cursor": "^2.19.0",
+    "socket.io": "^4.8.4"
+  },
+  "allowScripts": {
+    "argon2@0.44.0": true
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.4",
+    "@types/pg": "^8.23.1"
+  }
+}
